@@ -1,7 +1,7 @@
 @charset "UTF-8";
 header, footer { color: #FFF; background-image: url('../img/1.jpg'); background-repeat: no-repeat; }
 header nav { margin-top: 39px; }
-header h1 { margin-bottom: -8px; }
+header .h2 { margin-bottom: -8px; }
 header .logo { margin-bottom: 22px; }
 .rainbow { width: 100%; height: 3px; background : -moz-linear-gradient(0% 50% 0deg, rgba(51, 173, 153, 1) 0%, rgba(74, 249, 221, 1) 16.33%, rgba(48, 180, 196, 1) 33.23%, rgba(112, 196, 206, 1) 50.26%, rgba(36, 133, 145, 1) 66.1%, rgba(148, 249, 233, 1) 82.94%, rgba(51, 173, 153, 1) 100%); background : -webkit-linear-gradient(0deg, rgba(51, 173, 153, 1) 0%, rgba(74, 249, 221, 1) 16.33%, rgba(48, 180, 196, 1) 33.23%, rgba(112, 196, 206, 1) 50.26%, rgba(36, 133, 145, 1) 66.1%, rgba(148, 249, 233, 1) 82.94%, rgba(51, 173, 153, 1) 100%); background : -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(51, 173, 153, 1) ), color-stop(0.1633, rgba(74, 249, 221, 1) ), color-stop(0.3323, rgba(48, 180, 196, 1) ), color-stop(0.5026, rgba(112, 196, 206, 1) ), color-stop(0.661, rgba(36, 133, 145, 1) ), color-stop(0.8294, rgba(148, 249, 233, 1) ), color-stop(1, rgba(51, 173, 153, 1) )); background : -o-linear-gradient(0deg, rgba(51, 173, 153, 1) 0%, rgba(74, 249, 221, 1) 16.33%, rgba(48, 180, 196, 1) 33.23%, rgba(112, 196, 206, 1) 50.26%, rgba(36, 133, 145, 1) 66.1%, rgba(148, 249, 233, 1) 82.94%, rgba(51, 173, 153, 1) 100%); background : -ms-linear-gradient(0deg, rgba(51, 173, 153, 1) 0%, rgba(74, 249, 221, 1) 16.33%, rgba(48, 180, 196, 1) 33.23%, rgba(112, 196, 206, 1) 50.26%, rgba(36, 133, 145, 1) 66.1%, rgba(148, 249, 233, 1) 82.94%, rgba(51, 173, 153, 1) 100%); background : linear-gradient(90deg, rgba(51, 173, 153, 1) 0%, rgba(74, 249, 221, 1) 16.33%, rgba(48, 180, 196, 1) 33.23%, rgba(112, 196, 206, 1) 50.26%, rgba(36, 133, 145, 1) 66.1%, rgba(148, 249, 233, 1) 82.94%, rgba(51, 173, 153, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33AD99', endColorstr='#33AD99', GradientType=1);
 }
@@ -30,7 +30,7 @@ footer a, footer a:hover, footer a:active, footer a:focus { color: #ECECEC; text
 .fatpadding { padding: 20px 35px; }
 .fatmargin { margin-top: 3em; margin-bottom: 3em; overflow: auto; }
 .marginbottom22 { margin-bottom: 22px; }
-.marginbottom11 { margin-bottom: 11px; }
+.marginbottom11, footer ul li { margin-bottom: 11px; }
 .fillgrey { fill: #B0B0B0; }
 .fillgreen { fill: #33AD99; }
 .fillwhite { fill: #FFFFFF; }
