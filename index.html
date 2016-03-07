@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/monithor-favicon.png" type="image/x-icon" />
+<title>Monitor your server</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/monithor.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="logo pull-left">
+          <h1> 
+            <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+            <svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="30px" height="34.3px" viewBox="0 0 30 34.3" style="enable-background:new 0 0 30 34.3;"
+	 xml:space="preserve">
+              <g>
+                <path class="fillgreen" d="M27,34.3H3c-1.7,0-3-1.3-3-3V3c0-1.7,1.3-3,3-3h24c1.7,0,3,1.3,3,3v28.3C30,32.9,28.7,34.3,27,34.3z"/>
+                <g id="thunder_1_">
+                  <path class="fillwhite" d="M17.2,13.8l-1.9,1.6L5.4,3.8l8.4,17.4l1.9-1.6l9.9,11.6L17.2,13.8z M13.7,18.6L8.9,9l7.2,8.5l1.4-1.2l4.8,9.6
+			L15,17.5L13.7,18.6z"/>
+                </g>
+              </g>
+            </svg>
+            MONITHOR</h1>
+          <small>Keeping an eye on your server</small> </div>
+        <nav class="pull-right"> 
+          <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  --> 
+          <a id="showhide" href="#" onClick="showhidemobilenav()">
+          <svg class="visible-xs" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="31.7px" height="26.4px" viewBox="0 0 31.7 26.4"
+	 xml:space="preserve">
+            <g>
+              <path class="fillgrey" d="M31.7,4c0,0.7-0.6,1.3-1.3,1.3H1.3C0.6,5.3,0,4.7,0,4V1.3C0,0.6,0.6,0,1.3,0h29.1c0.7,0,1.3,0.6,1.3,1.3V4z M31.7,14.5
+		c0,0.7-0.6,1.3-1.3,1.3H1.3c-0.7,0-1.3-0.6-1.3-1.3v-2.6c0-0.7,0.6-1.3,1.3-1.3h29.1c0.7,0,1.3,0.6,1.3,1.3V14.5z M31.7,25.1
+		c0,0.7-0.6,1.3-1.3,1.3H1.3c-0.7,0-1.3-0.6-1.3-1.3v-2.6c0-0.7,0.6-1.3,1.3-1.3h29.1c0.7,0,1.3,0.6,1.3,1.3V25.1z"/>
+            </g>
+          </svg>
+          </a>
+          <ul class="list-inline hidden-xs">
+            <li><a class="btn btn-default" href="#">LOG IN</a></li>
+            <li><a class="btn btn-default" href="#">SIGN UP</a></li>
+          </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <div id="mobilenav" class="hidden">
+          <ul class="list-unstyled">
+            <li class="marginbottom11"><a class="btn btn-default btn-block" href="#">LOG IN</a></li>
+            <li><a class="btn btn-default btn-block" href="#">SIGN UP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="rainbow"></div>
+<div class="main">
+  <div class="whitepolygon marginbottom22">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <h2 class="text-uppercase text-center">know when your site is down</h2>
+          <div class="fatmargin">
+            <div class="col-sm-3"> 
+              <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+              <svg class="center-block" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="171.8px" height="155.2px" viewBox="0 0 171.8 155.2" style="enable-background:new 0 0 171.8 155.2;"
+	 xml:space="preserve">
+                <g id="Website_Icon_1_">
+                  <path class="st0" d="M171.8,151.1c0,2.2-1.6,4.1-3.5,4.1H3.5c-1.9,0-3.5-1.8-3.5-4.1V11.8c0-2.2,1.6-4.1,3.5-4.1h164.8
+		c1.9,0,3.5,1.8,3.5,4.1V151.1L171.8,151.1z"/>
+                  <path class="st1" d="M166.2,146.5c0,1.6-1.1,2.9-2.5,2.9H8.6c-1.4,0-2.5-1.3-2.5-2.9V17.1h160.2V146.5z"/>
+                  <path class="fillgreen" d="M166.2,142.4c0,1.6-1.1,2.9-2.5,2.9H8.6c-1.4,0-2.5-1.3-2.5-2.9V13.1h160.2V142.4z"/>
+                  <path class="fillwhite" d="M166.2,2.9c0-1.6-1.1-2.9-2.5-2.9H8.6C7.2,0,6,1.3,6,2.9v10.3h160.2V2.9z"/>
+                  <path class="st4" d="M153.9,8.7c0,0.6-0.4,1.2-1,1.2H28.3c-0.5,0-1-0.5-1-1.2V4.8c0-0.6,0.4-1.2,1-1.2h124.5c0.5,0,1,0.5,1,1.2
+		L153.9,8.7L153.9,8.7z"/>
+                  <ellipse class="st4" cx="12" cy="6.7" rx="1.7" ry="2"/>
+                  <ellipse class="st4" cx="16.8" cy="6.7" rx="1.7" ry="2"/>
+                  <ellipse class="st4" cx="21.3" cy="6.7" rx="1.7" ry="2"/>
+                  <g class="st5">
+                    <rect x="30.8" y="44.9" class="fillwhite" width="66.4" height="4.6"/>
+                    <rect x="30.8" y="55" class="fillwhite" width="48.1" height="4.6"/>
+                    <rect x="30.8" y="78.1" class="fillwhite" width="109.9" height="4.6"/>
+                    <rect x="30.8" y="88.2" class="fillwhite" width="109.9" height="4.6"/>
+                    <rect x="30.8" y="98.3" class="fillwhite" width="109.9" height="4.6"/>
+                    <rect x="30.8" y="107.4" class="fillwhite" width="109.9" height="4.6"/>
+                  </g>
+                  <path class="st4" d="M162.8,4.3c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+		C162.5,3.6,162.8,3.9,162.8,4.3L162.8,4.3z"/>
+                  <path class="st4" d="M162.7,9.1c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+		C162.4,8.5,162.7,8.8,162.7,9.1L162.7,9.1z"/>
+                  <path class="st4" d="M162.8,6.7c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+		C162.5,6.1,162.8,6.3,162.8,6.7L162.8,6.7z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="col-sm-1"><!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+              <svg class="center-block arrow" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="31.5px" height="80.3px" viewBox="0 0 31.5 80.3" style="enable-background:new 0 0 31.5 80.3;"
+	 xml:space="preserve">
+                <g>
+                  <path class="fillgrey" d="M31.5,44.4L0,80.3V69.9l26.8-29.6V40L0,10.4V0l31.5,35.9V44.4z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="col-sm-4"> 
+              <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+              <svg class="center-block" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="171.8px" height="155.2px" viewBox="0 0 171.8 155.2" style="enable-background:new 0 0 171.8 155.2;"
+	 xml:space="preserve">
+                <g>
+                  <g id="Website_Icon_2_">
+                    <path class="st0" d="M171.8,151.1c0,2.2-1.6,4.1-3.5,4.1H3.5c-1.9,0-3.5-1.8-3.5-4.1V11.8c0-2.2,1.6-4.1,3.5-4.1h164.8
+			c1.9,0,3.5,1.8,3.5,4.1V151.1L171.8,151.1z"/>
+                    <path class="st1" d="M166.2,146.5c0,1.6-1.1,2.9-2.5,2.9H8.6c-1.4,0-2.5-1.3-2.5-2.9V17.1h160.2V146.5z"/>
+                    <path class="fillwhite" d="M166.2,2.9c0-1.6-1.1-2.9-2.5-2.9H8.6C7.2,0,6,1.3,6,2.9v10.3h160.2V2.9z"/>
+                    <path class="st3" d="M153.9,8.7c0,0.6-0.4,1.2-1,1.2H28.3c-0.5,0-1-0.5-1-1.2V4.8c0-0.6,0.4-1.2,1-1.2h124.5c0.5,0,1,0.5,1,1.2
+			L153.9,8.7L153.9,8.7z"/>
+                    <ellipse class="st3" cx="12" cy="6.7" rx="1.7" ry="2"/>
+                    <ellipse class="st3" cx="16.8" cy="6.7" rx="1.7" ry="2"/>
+                    <ellipse class="st3" cx="21.3" cy="6.7" rx="1.7" ry="2"/>
+                    <path class="st3" d="M162.8,4.3c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+			C162.5,3.6,162.8,3.9,162.8,4.3L162.8,4.3z"/>
+                    <path class="st3" d="M162.7,9.1c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+			C162.4,8.5,162.7,8.8,162.7,9.1L162.7,9.1z"/>
+                    <path class="st3" d="M162.8,6.7c0,0.4-0.3,0.7-0.6,0.7h-4.7c-0.3,0-0.6-0.3-0.6-0.7l0,0c0-0.4,0.3-0.7,0.6-0.7h4.7
+			C162.5,6.1,162.8,6.3,162.8,6.7L162.8,6.7z"/>
+                  </g>
+                  <g id="Warning_1_">
+                    <path class="fillgreen" d="M105.4,94.1l-19-34.9c-0.6-1-1.6-1.7-2.8-1.7c-1.2,0-2.2,0.6-2.8,1.7l-19,34.9c-0.6,1-0.5,2.2,0,3.1
+			c0.6,1,1.6,1.6,2.7,1.6h38c1.1,0,2.1-0.6,2.7-1.6C106,96.3,106,95.1,105.4,94.1z M85.7,91.8c0,0.6-0.5,1.1-1.1,1.1h-2
+			c-0.6,0-1.1-0.5-1.1-1.1v-1.8c0-0.6,0.5-1.1,1.1-1.1h2c0.6,0,1.1,0.5,1.1,1.1V91.8z M85.8,85c0,0.6-0.5,1.1-1.1,1.1h-2.1
+			c-0.6,0-1.1-0.5-1.1-1.1L81,71.7c0-0.6,0.4-1.1,1-1.1h3.2c0.6,0,1,0.5,1,1.1L85.8,85z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="col-sm-1"><!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+              <svg class="center-block arrow" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="31.5px" height="80.3px" viewBox="0 0 31.5 80.3" style="enable-background:new 0 0 31.5 80.3;"
+	 xml:space="preserve">
+                <g>
+                  <path class="fillgrey" d="M31.5,44.4L0,80.3V69.9l26.8-29.6V40L0,10.4V0l31.5,35.9V44.4z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="col-sm-3"><!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+              <svg class="center-block" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="127.5px" height="141.1px" viewBox="0 0 127.5 141.1" style="enable-background:new 0 0 127.5 141.1;"
+	 xml:space="preserve">
+                <g id="Bell_1_">
+                  <g>
+                    <g>
+                      <path class="fillgreen" d="M102.3,62.2C86.2,22.2,77.6,6.9,47.9,6c-10.6-0.3-7.6-8-15.8-5.5C23.9,3.1,30.6,7.8,22,14.1
+				C-2,31.8-0.8,49.5,7.7,91.8c3.6,17.8-11.8,17.9-6.6,35.2c3.8,12.7,36.3,19.6,71.5,8.6c35.2-11,58.3-35.4,54.5-48
+				C121.9,70.2,109.1,79,102.3,62.2z M69.3,124.9c-31.4,9.8-56.5,1.8-57.4-1.3c-1.6-5.2,11.1-21.8,47.1-33.1
+				c36-11.3,55.4-5.4,57.2,0.5C117.2,94.5,100.8,115,69.3,124.9z"/>
+                    </g>
+                    <g>
+                      <path class="fillgreen" d="M25.2,111.2c5.3,5.4,15.9,6.7,26.5,2.7c11.9-4.5,19.4-14.2,17.9-22.4c-3,0.7-6,1.6-9.4,2.6
+				C43.3,99.5,32.2,105.8,25.2,111.2z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center"><a class="btn fatpadding btn-lg btn-success text-uppercase" href="#fastmodal">monitor up to 5 sites for free!</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row fatmargin">
+        <div class="col-sm-3"> <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+          <svg class="center-block" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="126.1px" height="136.6px" viewBox="0 0 126.1 136.6" style="enable-background:new 0 0 126.1 136.6;"
+	 xml:space="preserve">
+            <g id="server_rack_1_">
+              <g id="_x33_86-server-rack.png_1_">
+                <g>
+                  <path class="fillgreen" d="M120.9,68.3H5.3c-2.9,0-5.2,2.4-5.2,5.2v21c0,2.9,2.4,5.2,5.2,5.2h115.6c2.9,0,5.2-2.4,5.2-5.2v-21
+				C126.1,70.7,123.8,68.3,120.9,68.3z M10.5,94.6c-2.9,0-5.2-2.4-5.2-5.2s2.4-5.2,5.2-5.2s5.2,2.4,5.2,5.2S13.4,94.6,10.5,94.6z
+				 M99.9,0H26.3L0,26.3h126.1L99.9,0z M120.9,105.1H5.3c-2.9,0-5.2,2.4-5.2,5.2v21c0,2.9,2.4,5.2,5.2,5.2h115.6
+				c2.9,0,5.2-2.4,5.2-5.2v-21C126.1,107.4,123.8,105.1,120.9,105.1z M10.5,131.4c-2.9,0-5.2-2.4-5.2-5.2c0-2.9,2.4-5.2,5.2-5.2
+				s5.2,2.4,5.2,5.2C15.8,129,13.4,131.4,10.5,131.4z M120.9,31.5H5.3c-2.9,0-5.2,2.4-5.2,5.2v21C0,60.7,2.4,63,5.3,63h115.6
+				c2.9,0,5.2-2.4,5.2-5.2v-21C126.1,33.9,123.8,31.5,120.9,31.5z M10.5,57.8c-2.9,0-5.2-2.4-5.2-5.2s2.4-5.2,5.2-5.2
+				s5.2,2.4,5.2,5.2S13.4,57.8,10.5,57.8z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="text-uppercase">How does it Work?</h2>
+          <p>We monitor your server every 5 minutes. If somethings’s not quite right we do a second check and send you a notification in the form of an email.</p>
+        </div>
+      </div>
+      <div class="row fatmargin">
+        <div class="col-sm-3"> <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  -->
+          <svg class="center-block" version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="150.3px" height="122.9px" viewBox="0 0 150.3 122.9" style="enable-background:new 0 0 150.3 122.9;"
+	 xml:space="preserve">
+            <g id="users_1_">
+              <g id="_x39_74-users-toolbar-selected_x40_2x.png_1_">
+                <g>
+                  <path class="fillgreen" d="M100.2,84c-4.5-2-7.2-4.6-8-7.8c-1.4-5.8,3.6-12.1,3.6-12.1l0,0c0.4-0.4,6.7-12.6,6.7-32.4
+				c0-15.1-6-31.7-27.4-31.7S47.7,16.6,47.7,31.7c0,19.8,6.3,32,6.7,32.4l0,0c0,0,5,6.3,3.6,12.1c-0.8,3.2-3.5,5.8-8,7.8
+				c-26.1,8.2-36.4,14.1-36.4,22.7v9.4c0,3.4,3.4,6.8,6.8,6.8h109.3c3.4,0,6.8-3.4,6.8-6.8v-9.4C136.6,98.1,126.4,92.2,100.2,84z
+				 M41.5,78.5c-2.7-1.2-5.2-2.8-5.7-4.8C35,70.2,38,66.4,38,66.4l0,0c0.2-0.2,4-7.7,4-19.8c0-9.2-3.6-19.4-16.5-19.4
+				S9.1,37.4,9.1,46.6c0,12.1,3.8,19.6,3.9,19.7c0,0,3.1,3.9,2.3,7.5c-0.5,2-1.2,3.5-4,4.8C2.6,82.4,0,87.1,0,92.4v5.7
+				c0,2.1,2.1,4.2,4.1,4.2h3.3c2.7-10.2,15-16.5,35.7-23.3C42.6,78.9,42.1,78.7,41.5,78.5z M138.9,78.6c-2.7-1.2-3.5-2.8-4-4.8
+				c-0.8-3.5,2.3-7.5,2.3-7.5c0.1-0.1,3.9-7.5,3.9-19.7c0-9.2-3.6-19.4-16.5-19.4c-9.6,0-14.1,5.7-15.7,12.4
+				c-0.2,2.3-0.5,4.6-0.8,6.7c0,0.1,0,0.2,0,0.2c0,12.1,3.8,19.5,4,19.8c0,0,3,3.8,2.2,7.4c-0.5,2-2.9,3.5-5.7,4.8
+				c-0.5,0.2-0.9,0.3-1.4,0.5c20.7,6.8,33,13.2,35.6,23.4h3.3c2.1,0,4.1-2.1,4.1-4.2v-5.7C150.2,87.3,147.7,82.5,138.9,78.6z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="col-sm-9">
+          <h2 class="text-uppercase">IS THIS SERVICE FOR ME?</h2>
+          <p>This service is for webmasters and bloggers who use self hosted servers and want to make sure their website is never down.</p>
+        </div>
+      </div>
+      <div class="row col-sm-8 col-sm-offset-2 fatmargin">
+        <h2 class="text-center text-uppercase">What may happen to my server anyways?</h2>
+        <p>A lot of things can happen that may harm your site, especially self hosted wordpress sites.
+          Your site may be under attack, a plug-in might corrupt your database, the company hosting your vps might have problems. </p>
+        <p>If clients or prospects can not access your site, it will hurt your business.</p>
+        <p>If search engines bots can not access your site, it will hurt your rankings and your business.</p>
+      </div>
+    </div>
+  </div>
+  <div class="whitepolygon">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row fatmargin col-sm-6 col-sm-offset-3">
+          <form action="">
+          <div class="form-group"> 
+          <input type="text" class="form-control" placeholder="First Name...">
+          </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password...">
+            </div>
+            <button type="submit" class="btn btn-lg btn-success btn-block text-uppercase fatpadding">start monitoring your website now!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="paddingtop20 paddingbottom20">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="list-unstyled text-center">
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="list-unstyled text-center">
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul class="list-unstyled text-center">
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+              <li><a href="#">footer link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script defer type="text/javascript">
+function showhidemobilenav() {
+var a = document.getElementById('mobilenav').className;
+if (a == 'hidden') {document.getElementById('mobilenav').removeAttribute('class');}
+else {document.getElementById('mobilenav').className = 'hidden';}
+}
+</script>
+</body>
+</html>
