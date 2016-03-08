@@ -49,7 +49,7 @@
           </a>
           <ul class="list-inline hidden-xs">
             <li><a class="btn btn-default" href="#">LOG IN</a></li>
-            <li><a class="btn btn-default" href="#signupform">SIGN UP</a></li>
+            <li><a class="btn btn-default" data-scroll href="#signupform">SIGN UP</a></li>
           </ul>
         </nav>
         <div class="clearfix"></div>
@@ -300,31 +300,24 @@
       </div>
     </div>
   </footer>
-<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>-->
+<script src="js/smooth-scroll.min.js"></script>
 <script type="text/javascript">
 function showhidemobilenav() {
 var a = document.getElementById('mobilenav').className;
 if (a == 'hidden') {document.getElementById('mobilenav').removeAttribute('class');}
 else {document.getElementById('mobilenav').className = 'hidden';}
 }
-
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+// smooth scroll
+smoothScroll.init({
+    //selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+    //selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
+    speed: 1300, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeInOutCubic', // Easing pattern to use
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    updateURL: false, // Boolean. If true, update the URL hash on scroll
+    //callback: function ( anchor, toggle ) {} // Function to run after scrolling
 });
-
-
 </script>
 </body>
 </html>
