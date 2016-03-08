@@ -19,7 +19,8 @@
       <div class="row">
         <div class="logo pull-left">
          
-          <h1 class="h2">   <svg class="pull-left" version="1.1"
+          <h1 class="h2"> 
+            <svg id="logo" class="pull-left" version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="30px" height="34.3px" viewBox="0 0 30 34.3" 
 	 xml:space="preserve">
@@ -30,7 +31,8 @@
 			L15,17.5L13.7,18.6z"/>
                 </g>
               </g>
-            </svg><b>MONITHOR</b></h1>
+            </svg>
+            <b>MONITHOR</b></h1>
           <small>Keeping an eye on your server</small> </div>
         <nav class="pull-right"> 
           <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In  --> 
@@ -48,14 +50,14 @@
           </a>
           <ul class="list-inline hidden-xs">
             <li><a class="btn btn-default" href="#">LOG IN</a></li>
-            <li><a class="btn btn-default" href="#">SIGN UP</a></li>
+            <li><a class="btn btn-default" href="#signupform">SIGN UP</a></li>
           </ul>
         </nav>
         <div class="clearfix"></div>
         <div id="mobilenav" class="hidden">
           <ul class="list-unstyled">
             <li class="marginbottom11"><a class="btn btn-default btn-block" href="#">LOG IN</a></li>
-            <li><a class="btn btn-default btn-block" href="#">SIGN UP</a></li>
+            <li><a class="btn btn-default btn-block" href="#signupform">SIGN UP</a></li>
           </ul>
         </div>
       </div>
@@ -253,7 +255,7 @@
     <div class="container">
       <div class="container-fluid">
         <div class="row fatmargin col-sm-6 col-sm-offset-3">
-          <form action="">
+          <form id="signupform" action="">
           <div class="form-group"> 
           <input type="text" class="form-control" placeholder="First Name...">
           </div>
@@ -299,12 +301,23 @@
       </div>
     </div>
   </footer>
+<script defer src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 <script defer type="text/javascript">
 function showhidemobilenav() {
 var a = document.getElementById('mobilenav').className;
 if (a == 'hidden') {document.getElementById('mobilenav').removeAttribute('class');}
 else {document.getElementById('mobilenav').className = 'hidden';}
 }
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('body').on('click', '.page-scroll a', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 </script>
 </body>
 </html>
