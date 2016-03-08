@@ -97,7 +97,7 @@ p { margin: 0 0 11px; }
 @media (min-width: 768px) {
 .lead { font-size: 24px; }
 }
-small, .small { font-size: 87%; }
+/*small, .small { font-size: 87%; }*/
 mark, .mark { background-color: #fcf8e3; padding: .2em; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }

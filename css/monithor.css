@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header, footer { color: #FFF; background-image: url('../img/bg-bw-60.jpg'); background-repeat: no-repeat; }
+header, footer { color: #FFF; background-image: url('../img/bg-bw-60.jpg'); background-color:#222222;}
 header #logo { margin-right: 7px;}
 header nav { margin-top: 29px; }
 header .h2 { margin-bottom: -8px; }
