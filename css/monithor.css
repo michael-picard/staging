@@ -25,6 +25,7 @@ footer a, footer a:hover, footer a:active, footer a:focus { color: #ECECEC; text
 #fastmodal { position: fixed; z-index: 9999; background-color: #fff; padding: 22px; transition: all 1s; }
 :target {visibility:visible !important;opacity: 1 !important;}
 [data-transition="fade"] { top:25%; opacity: 0; visibility:hidden;}
+.btn-lg { font-weight: 700;}
 /*UTILITIES*/
 .paddingtop20 { padding-top: 20px; }
 .paddingbottom20 { padding-bottom: 20px; }
