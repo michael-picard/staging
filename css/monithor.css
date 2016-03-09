@@ -29,7 +29,7 @@ footer a, footer a:hover, footer a:active, footer a:focus { color: #ECECEC; text
 /*UTILITIES*/
 .paddingtop20 { padding-top: 20px; }
 .paddingbottom20 { padding-bottom: 20px; }
-.fatpadding { padding: 20px 35px; }
+.fatpadding { padding: 20px 35px; white-space:normal; }
 .fatmargin { margin-top: 3em; margin-bottom: 3em; overflow: auto; }
 .marginbottom22 { margin-bottom: 22px; }
 .marginbottom11, footer ul li { margin-bottom: 11px; }
